@@ -110,7 +110,7 @@
 				TargetAttributes = {
 					6B01BCC71F2E26F000577134 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 3DCM2G52LN;
+						DevelopmentTeam = SZSARX3S6Y;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -273,7 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3DCM2G52LN;
+				DEVELOPMENT_TEAM = SZSARX3S6Y;
 				INFOPLIST_FILE = mySnake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -286,7 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3DCM2G52LN;
+				DEVELOPMENT_TEAM = SZSARX3S6Y;
 				INFOPLIST_FILE = mySnake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

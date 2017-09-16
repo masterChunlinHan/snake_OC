@@ -6,15 +6,16 @@
 //  Copyright © 2017年 韩春林. All rights reserved.
 //
 
+
 #import "ViewController.h"
 #define SCREENWIDTH [UIScreen mainScreen].bounds.size.width//屏幕的高度
 #define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height//屏幕宽度
-#define LINECOUNT 30    //地图上可显示的行数，这里规定地图是正方形，所以只需要一个数
+#define LINECOUNT 30       //地图上可显示的行数，这里规定地图是正方形，所以只需要一个数
 #define BOXWIDTH  SCREENHEIGHT/LINECOUNT  //每格的宽度，既是食物的宽度也是每节蛇身的宽度
 
 @interface ViewController ()
     @property(nonatomic,strong)UIView *map;//地图只有一个，定义成全局的
-    @property(nonatomic,strong)UIView *food;//食物也只有一个
+    @property(nonatomic,strong)UIImageView *food;//食物也只有一个
     @property(nonatomic,assign)NSInteger foodx;//食物的x坐标,以格子的宽度为单位
     @property(nonatomic,assign)NSInteger foody;//食物的y坐标
     @property(nonatomic,strong)NSMutableArray *body;//蛇的身体是变化的，所以用一个可变数组来存
@@ -81,9 +82,10 @@
 -(void)createFood{
     //先判断食物是否已经存在，如果存在就不再创建
     if(!self.food){
-    self.food = [[UIView alloc]initWithFrame:CGRectMake(0,0, BOXWIDTH, BOXWIDTH)];
-        UIColor *foodColor = [UIColor redColor];
-        self.food.backgroundColor = foodColor;
+    self.food = [[UIImageView alloc]initWithFrame:CGRectMake(0,0, BOXWIDTH, BOXWIDTH)];
+//        UIColor *foodColor = [UIColor redColor];
+//        self.food.backgroundColor = foodColor;
+        self.food.image = [UIImage imageNamed:@"qingwa"];
         [self.map addSubview:self.food];
     }
     //每次刷新食物的坐标都是一个随机值
